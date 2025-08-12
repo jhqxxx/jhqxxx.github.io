@@ -1,3 +1,5 @@
+title: "蒋蒋的学习笔记"
+theme: minima
 lsi: false
 safe: true
 include: ["./*.md"]
