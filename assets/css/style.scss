@@ -1,0 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}"; // 引入主题的默认样式
+
+.site-title {
+  color: pink;
+}
