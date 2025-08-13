@@ -61,7 +61,7 @@ FFN层更像是“深度思考”。当注意力层理清词之间的关系后�
 3. ...
 
 ### rust实现代码
-完整代码链接：https://github.com/jhqxxx/learn_candle
+完整代码链接：[https://github.com/jhqxxx/learn_candle](https://github.com/jhqxxx/learn_candle)
 1. **FeedForward**
 
 ```rust
