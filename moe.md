@@ -63,6 +63,7 @@ FFN层更像是“深度思考”。当注意力层理清词之间的关系后�
 ### rust实现代码
 完整代码链接：https://github.com/jhqxxx/learn_candle
 1. **FeedForward**
+
 ```rust
 pub struct FeedForward {
     up: Linear,
@@ -89,6 +90,7 @@ impl FeedForward {
 ```
 
 2. **MOE**
+
 ```rust
 pub struct SparseMoeBlock {
     router: Linear,
@@ -171,6 +173,7 @@ impl SparseMoeBlock {
 ```
 
 3. **MOEAttentionBlock**
+
 ```rust
 pub struct MoeAttentionBlock {
     rms_norm1: RMSNorm,
