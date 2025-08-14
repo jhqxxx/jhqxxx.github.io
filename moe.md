@@ -139,7 +139,7 @@ impl SparseMoeBlock {
             router_weights =
                 router_weights.broadcast_div(&router_weights.sum_keepdim(D::Minus1)?)?;
         }
-        let expert_mask = one_hot(&select_experts, self.experts.len())?.permute((2, 1, 0))?;
+        let expert_mask = one_hot(&select_experts, self.experts.len())?.permute((2, 1, 0))?.to_dtype(candle_core::DType::U32)?;
         let exprt_hit = expert_mask.sum((D::Minus1, D::Minus2))?;
         let expert_hit_vec = exprt_hit.to_vec1::<u8>()?;
         let expert_hit_vec: Vec<usize> = expert_hit_vec
