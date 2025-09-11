@@ -3,11 +3,11 @@
 #### 输入数据
 * pixel_values: 
     ```text
-    Tensor[[1024, 1176], bf16, cuda:0]
+    Tensor[[grid_t*grid_h_grid_w, 1176], bf16, cuda:0]
     ```
 * image_grid_thw: 
     ```text
-    image_grid_thw: [[ 1, 16, 64]]
+    image_grid_thw: [[grid_t, grid_h, grid_w]]
     Tensor[[1, 3], u32, cuda:0]
     ```
 
@@ -19,8 +19,8 @@
     图片来源：[飞桨深度学习基础篇卷积算子](https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/convolution_operator/index.html)
 
 * pixel_value做卷积操作：
-    * 输入维度：[1024, 1176]
-    * reshape：[1024, 3, 2, 14, 14]
+    * 输入维度：[grid_t*grid_h_grid_w, 1176]
+    * reshape：[grid_t*grid_h_grid_w, 3, 2, 14, 14]
     * 3D卷积核：in_channel=3, kernel_size:(2,14,14), out_channel=1280
     * 由于卷积核大小（2，14，14）等于输入的时空维度（2，14，14）， 整个输入区域只进行一次卷积操作
     * 卷积操作在本质上是权重与输入的点积
