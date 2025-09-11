@@ -29,7 +29,7 @@ You are a helpful assistant.<|im_end|>
 <|vision_start|><|image_pad|><|vision_end|>请分析图片并提取所有可见文本内容，按从左到右、从上到下的布局，返回纯文本<|im_end|>
 <|im_start|>assistant
 ```
-视频地址：【rust本地化部署Qwen3-chat_template】 https://www.bilibili.com/video/BV1xza1zKEEB/?share_source=copy_web&vd_source=9bbb759c3e7edda5d4577509b961f6f1
+视频地址：[rust本地化部署Qwen3-chat_template](https://www.bilibili.com/video/BV1xza1zKEEB/?share_source=copy_web&vd_source=9bbb759c3e7edda5d4577509b961f6f1)
 
 2. 预处理图像和视频
     1. 提取图像和视频：遍历messages，将content里面类型为image/image_url/video/video_url的路径提取出来
@@ -106,7 +106,7 @@ You are a helpful assistant.<|im_end|>
     * 词嵌入维度1280
 
 #### reshape时merge_size的必要性
-参考视频：【Qwen2.5-VL源码解读-Qwen2VLImageProcessor】 https://www.bilibili.com/video/BV12CtFzcEw2/?share_source=copy_web&vd_source=9bbb759c3e7edda5d4577509b961f6f1
+参考视频：[Qwen2.5-VL源码解读-Qwen2VLImageProcessor](https://www.bilibili.com/video/BV12CtFzcEw2/?share_source=copy_web&vd_source=9bbb759c3e7edda5d4577509b961f6f1)
 
 ```python
 import torch
