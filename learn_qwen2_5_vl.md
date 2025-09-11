@@ -1,8 +1,8 @@
-## Qwen2.5VL学习记录
+## Qwen2.5VL推理的rust实现
 #### 模型结构图
 ![Qwen2.5VL结构图](images/qwen2_5_vl.png)
 
-##### rust实现代码
+##### rust代码
 不完美推理实现代码链接：[https://github.com/jhqxxx/learn_qwen2_5_vl](https://github.com/jhqxxx/learn_qwen2_5_vl)
 
 ### 模型推理测试
