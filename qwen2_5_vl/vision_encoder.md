@@ -27,6 +27,7 @@
     * 这时卷积操作可以等价于将输入特征和权重都展平为向量，然后进行点积计算
 
 * python验证
+
 ```python
 import torch
 import torch.nn as nn
@@ -53,6 +54,7 @@ print(f"max dif: {dif_max}, sum dif: {dif_sum}")
 ```
 
 * 输出结果
+
 ```
 conv_3d.weight.shape: torch.Size([1280, 3, 2, 14, 14])
 out1.shape: torch.Size([1024, 1280])
