@@ -102,8 +102,7 @@ You are a helpful assistant.<|im_end|>
     
 3. 将text中<\|image_pad\|>或者<\|video_pad\|>重复num_vision_token次
     * 后续将使用真实的vision token embedding数据替换掉<\|image_pad\|>或<\|video_pad\|>的嵌入向量，因此需要保证替换索引是一致的
-4. 将text进行词嵌入
-    * 词嵌入维度1280
+
 
 #### reshape时merge_size的必要性
 参考视频：[Qwen2.5-VL源码解读-Qwen2VLImageProcessor](https://www.bilibili.com/video/BV12CtFzcEw2/?share_source=copy_web&vd_source=9bbb759c3e7edda5d4577509b961f6f1)
