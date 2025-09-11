@@ -2,4 +2,4 @@
 [理解moe](moe.md)
 
 # 关于视觉语言模型
-[Qwen2.5VL学习记录](learn_qwen2_5_vl.md)
+[rust实现Qwen2.5VL](learn_qwen2_5_vl.md)
