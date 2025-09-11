@@ -100,8 +100,8 @@ You are a helpful assistant.<|im_end|>
         * 如果有多个视频数据，在0维cat起来，得到拼接后的视频数据和视频网格数据
         * 如果有视频数据，计算一个grid_t代表多长时间，如果fps=2, temporal_patch_size=2, 那grid_t=1s,则一个网格时间代表1s,对于不同帧率视频，fps应该动态调整
     
-3. 将text中\<|image_pad|>或者\<|video_pad|>重复num_vision_token次
-    * 后续将使用真实的vision token embedding数据替换掉\<|image_pad|>或\<|video_pad|>的嵌入向量，因此需要保证替换索引是一致的
+3. 将text中<\|image_pad\|>或者<\|video_pad\|>重复num_vision_token次
+    * 后续将使用真实的vision token embedding数据替换掉<\|image_pad\|>或<\|video_pad\|>的嵌入向量，因此需要保证替换索引是一致的
 4. 将text进行词嵌入
     * 词嵌入维度1280
 
