@@ -1,4 +1,4 @@
-## Vision Encode-PatchEmbed
+## Qwen2.5VL-Vision Encode-PatchEmbed
 * candle库中conv3D的算子暂不支持，那要如何实现patch embed中的Conv3D操作呢
 * 回顾一下卷积计算
     ![conv2d](../images/conv2d.png)

@@ -1,4 +1,4 @@
-## Vision Encode-WindowAttention
+## Qwen2.5VL-Vision Encode-WindowAttention
 
 ### 语言序列的窗口注意力
 * q于k做矩阵乘得到注意力得分
@@ -15,10 +15,9 @@
 * merge_window_size = 112 / 2 / 14 = 4
 
 * 示例数据：
-    * num_token = 56，
-    * 其中每个token考虑merge操作
-    * 维度：(num_token, 4，hidden_dim)
-![image_token](../images/image_tokens.png)
+    * num_token = 56
+
+    ![image_token](../images/image_tokens.png)
 
 * 划分窗口
     * h=7,不能整除merge_window_size，需要填充-100以满足窗口划分
@@ -29,7 +28,9 @@
 * 记录每个窗口中有效token的数量: [16, 16, 12, 12]
 * 计算累计序列长度：[16, 32, 44, 56]
 * 生成attention_mask: 
+
 ![window_attention_mask](../images/window_attention_mask.png)
 
 
-
+* 上诉操作是对窗口维度进行理解的
+* 实际计算时因为后续有merge操作，所以数据会多一个merge块处理的过程
