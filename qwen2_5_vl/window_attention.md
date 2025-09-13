@@ -34,3 +34,5 @@
 
 * 上诉操作是对窗口维度进行理解的
 * 实际计算时因为后续有merge操作，所以数据会多一个merge块处理的过程
+
+* [rust代码地址](https://github.com/jhqxxx/learn_qwen2_5_vl/blob/main/src/qwen2_5_vl/vision_model.rs)
