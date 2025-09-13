@@ -1,9 +1,9 @@
 ## Qwen2.5VL-Vision Encode-WindowAttention
 
 ### 语言序列的窗口注意力
-* q于k做矩阵乘得到注意力得分
-* 注意力得分维度(bs, num_head, seq_len, seq_len)
-* 基本因果注意力中，attention_mask是一个下三角矩阵，每个token能拥有它及它之前的所有token的注意力得分
+* q与k做矩阵乘得到注意力得分
+* 注意力得分的维度(num_head, seq_len, seq_len)
+* 基本因果注意力模型中，attention_mask是一个下三角矩阵，每个token能拥有它及它之前的所有token的注意力得分
 * 窗口注意力，每个token能拥有它及它之前窗口大小个token的注意力得分
 
 ![window_attention](../images/window_attention_llm.png)
