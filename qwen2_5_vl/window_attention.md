@@ -21,7 +21,8 @@
 
 * 划分窗口
     * h=7,不能整除merge_window_size，需要填充-100以满足窗口划分
-![image_window](../images/window_attention_image.png)
+
+    ![image_window](../images/window_attention_image.png)
 
 * 视觉序列按窗口重排：[0，1，2，3，8，9，10，11，16，17，18，19，24，25，26，27，4，5，6，7，12，...52, 53, 54, 55]
 * 旋转位置编码也要按相同索引重排
