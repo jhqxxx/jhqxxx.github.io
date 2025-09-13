@@ -1,4 +1,4 @@
-## Vision Emcode-WindowAttention
+## Vision Encode-WindowAttention
 
 ### 语言序列的窗口注意力
 * q于k做矩阵乘得到注意力得分
