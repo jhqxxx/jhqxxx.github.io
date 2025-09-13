@@ -10,7 +10,7 @@
 
 ### 视觉序列的窗口注意力
 * 视觉序列：(seq_len, hidden_dim)
-* seq_len = grid_t\*grid_h\*grdi_w
+* seq_len = grid_t\*grid_h\*grid_w
 * window_size = 112
 * merge_window_size = 112 / 2 / 14 = 4
 
