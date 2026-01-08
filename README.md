@@ -7,6 +7,7 @@
 [rust实现Qwen3VL](qwen3vl.md)
 
 [rust实现DeepSeekOCR](deepseek_ocr.md)
+[rust实现HunyuanOCR](hunyuan_ocr.md)
 
 # 关于语音合成模型
 [VoxCPM](voxcpm.md)
