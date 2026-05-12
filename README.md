@@ -11,3 +11,6 @@
 
 # 关于语音合成模型
 [VoxCPM](voxcpm.md)
+
+# 数学
+[插值](./math/interpolate.md)
